@@ -3,6 +3,7 @@
 use CGI qw(:standard);
 use DBI;
 
+### Declaring main variables
 my $host = "localhost";
 my $database = "mysqldb";
 my $user = "root";
