@@ -20,7 +20,7 @@ my $sth = $dbh->prepare($query1);
 
 $sth->execute() or die $DBI::errstr;
 
-### Print result 
+
 print header;
 print start_html;
 print "<table border=all cells=all>\n";
