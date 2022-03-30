@@ -13,11 +13,13 @@ my $dbh = DBI->connect("DBI:$driver:$database;host=$host",
                        $user, $password, { RaiseError => 1 } ) or
    die ( "Couldn't connect to database: " . DBI->errstr );
 
-
+### MySQL query.
 my $query1 = "SELECT * FROM Employees";
 
+### Prepare SQL statement
 my $sth = $dbh->prepare($query1);
 
+### Execute the statement
 $sth->execute() or die $DBI::errstr;
 
 ### Print result 
