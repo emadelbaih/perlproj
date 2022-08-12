@@ -2,8 +2,8 @@
 ###
 ###
 
-use CGI qw(:standard); #Include CGI Module
-use DBI;
+use CGI qw(:standard); 
+use DBI; #DBI Module
 
 my $host = "localhost";
 my $database = "mysqldb";
