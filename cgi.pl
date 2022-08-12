@@ -3,7 +3,7 @@
 ###
 
 use CGI qw(:standard); 
-use DBI; #DBI Module
+use DBI;
 
 my $host = "localhost";
 my $database = "mysqldb";
