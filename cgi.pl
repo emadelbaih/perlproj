@@ -2,7 +2,7 @@
 ###
 ###
 
-use CGI qw(:standard);
+use CGI qw(:standard); #Include CGI Module
 use DBI;
 
 my $host = "localhost";
