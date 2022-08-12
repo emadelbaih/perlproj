@@ -1,0 +1,80 @@
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [sdap_cli_connect_recv] (0x0400): Connection established.
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [_be_fo_set_port_status] (0x8000): Setting status: PORT_WORKING. Called from: src/providers/ldap/sdap_async_connection.c: sdap_cli_connect_recv: 2145
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [fo_set_port_status] (0x0100): Marking port 389 of server 'hhvaddsp01.tmh.tmhs' as 'working'
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [set_server_common_status] (0x0100): Marking server 'hhvaddsp01.tmh.tmhs' as 'working'
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [fo_set_port_status] (0x0400): Marking port 389 of duplicate server 'hhvaddsp01.tmh.tmhs' as 'working'
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [sdap_id_op_connect_done] (0x4000): notify connected to op #1
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [check_ipv4_addr] (0x0200): Loopback IPv4 address 127.0.0.1
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [check_ipv6_addr] (0x0200): Loopback IPv6 address ::1
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [check_ipv6_addr] (0x0200): Link local IPv6 address fe80::250:56ff:fe95:d736
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [sdap_id_op_connect_done] (0x4000): caching successful connection after 1 notifies
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [be_run_unconditional_online_cb] (0x4000): List of unconditional online callbacks is empty, nothing to do.
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [be_run_online_cb] (0x0080): Going online. Running callbacks.
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [resolv_is_address] (0x4000): [hhvclvrlfd01.tmh.tmhs] does not look like an IP address
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [resolv_gethostbyname_step] (0x2000): Querying DNS
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [resolv_gethostbyname_dns_query] (0x0100): Trying to resolve A record of 'hhvclvrlfd01.tmh.tmhs' in DNS
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [schedule_request_timeout] (0x2000): Scheduling a timeout of 3 seconds
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [schedule_timeout_watcher] (0x2000): Scheduling DNS timeout watcher
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [delayed_online_authentication_callback] (0x0200): Backend is online, starting delayed online authentication.
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [be_ptask_online_cb] (0x0400): Back end is online
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [be_ptask_enable] (0x0080): Task [AD machine account password renewal]: already enabled
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [be_ptask_online_cb] (0x0400): Back end is online
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [be_ptask_enable] (0x0080): Task [Dyndns update]: already enabled
+(2022-08-11 13:37:49): [be[tmh.tmhs]] [ad_online_cb] (0x0400): The AD provider is online
+(2022-08-11 13:37:50): [be[tmh.tmhs]] [check_fd_timeouts] (0x4000): Checking for DNS timeouts
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [check_fd_timeouts] (0x4000): Checking for DNS timeouts
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [unschedule_timeout_watcher] (0x4000): Unscheduling DNS timeout watcher
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [request_watch_destructor] (0x0400): Deleting request watch
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [resolv_gethostbyname_done] (0x0040): querying hosts database failed [5]: Input/output error
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [nsupdate_get_addrs_done] (0x0040): Could not resolve address for this machine, error [5]: Input/output error, resolver returned: [12]: Timeout while contacting DNS servers
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [nsupdate_get_addrs_done] (0x0040): nsupdate_get_addrs_done failed: [5]: [Input/output error]
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [sdap_dyndns_dns_addrs_done] (0x0040): Could not receive list of current addresses [5]: Input/output error
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [ad_dyndns_sdap_update_done] (0x0040): Dynamic DNS update failed [5]: Input/output error
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [sdap_id_op_destroy] (0x4000): releasing operation connection
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [be_ptask_done] (0x0040): Task [Dyndns update]: failed with [5]: Input/output error
+(2022-08-11 13:37:51): [be[tmh.tmhs]] [be_ptask_schedule] (0x0400): Task [Dyndns update]: scheduling task 86400 seconds from now [1660329471]
+(2022-08-11 13:50:09): [be[tmh.tmhs]] [be_ptask_execute] (0x0400): Task [AD machine account password renewal]: executing task, timeout 60 seconds
+(2022-08-11 13:50:09): [be[tmh.tmhs]] [child_handler_setup] (0x2000): Setting up signal handler up for pid [51673]
+(2022-08-11 13:50:09): [be[tmh.tmhs]] [child_handler_setup] (0x2000): Signal handler set up for pid [51673]
+(2022-08-11 13:50:10): [be[tmh.tmhs]] [child_sig_handler] (0x1000): Waiting for child [51673].
+(2022-08-11 13:50:10): [be[tmh.tmhs]] [child_sig_handler] (0x0100): child [51673] finished successfully.
+(2022-08-11 13:50:10): [be[tmh.tmhs]] [read_pipe_handler] (0x0400): EOF received, client finished
+(2022-08-11 13:50:10): [be[tmh.tmhs]] [ad_machine_account_password_renewal_done] (0x1000): --- adcli output start---
+ * Found realm in keytab: TMH.TMHS
+ * Found computer name in keytab: HHVCLVRLFD01
+ * Found service principal in keytab: host/HHVCLVRLFD01
+ * Found service principal in keytab: RestrictedKrbHost/HHVCLVRLFD01
+ * Using fully qualified name: hhvclvrlfd01.tmh.tmhs
+ * Using domain name: tmh.tmhs
+ * Using computer account name: HHVCLVRLFD01
+ * Using domain realm: tmh.tmhs
+ * Sending NetLogon ping to domain controller: hhvaddsp01.tmh.tmhs
+ * Received NetLogon info from: hhvaddsp01.tmh.tmhs
+ * Wrote out krb5.conf snippet to /tmp/adcli-krb5-3doMMY/krb5.d/adcli-krb5-conf-zCWqPE
+ * Authenticated as default/reset computer account: HHVCLVRLFD01
+ * Using GSS-SPNEGO for SASL bind
+ * Looked up short domain name: TMH
+ * Looked up domain SID: S-1-5-21-13848425-596468484-2028798650
+ * Using fully qualified name: hhvclvrlfd01.tmh.tmhs
+ * Using domain name: tmh.tmhs
+ * Using computer account name: HHVCLVRLFD01
+ * Using domain realm: tmh.tmhs
+ * Enrolling computer name: HHVCLVRLFD01
+ * Generated 120 character computer password
+ * Using keytab: FILE:/etc/krb5.keytab
+ * Found computer account for HHVCLVRLFD01$ at: CN=HHVCLVRLFD01,OU=Linux Servers,OU=Open Systems,DC=tmh,DC=tmhs
+ * Retrieved kvno '2' for computer account in directory: CN=HHVCLVRLFD01,OU=Linux Servers,OU=Open Systems,DC=tmh,DC=tmhs
+ * Password not too old, no change needed
+ * Sending NetLogon ping to domain controller: hhvaddsp01.tmh.tmhs
+ * Received NetLogon info from: hhvaddsp01.tmh.tmhs
+ * Checking RestrictedKrbHost/HHVCLVRLFD01
+ *    Added RestrictedKrbHost/HHVCLVRLFD01
+ * Checking host/HHVCLVRLFD01
+ *    Added host/HHVCLVRLFD01
+---adcli output end---
+(2022-08-11 13:50:10): [be[tmh.tmhs]] [be_ptask_done] (0x0400): Task [AD machine account password renewal]: finished successfully
+(2022-08-11 13:50:10): [be[tmh.tmhs]] [be_ptask_schedule] (0x0400): Task [AD machine account password renewal]: scheduling task 86400 seconds from last execution time [1660330209]
+(2022-08-11 13:52:41): [be[tmh.tmhs]] [sdap_id_conn_data_expire_handler] (0x4000): Connection is about to expire, releasing it
+(2022-08-11 13:52:41): [be[tmh.tmhs]] [sdap_id_release_conn_data] (0x4000): Releasing unused connection with fd [23]
+(2022-08-11 13:52:41): [be[tmh.tmhs]] [sdap_handle_release] (0x2000): Trace: sh[0x55ea44b61440], connected[1], ops[(nil)], ldap[0x55ea44bf4af0], destructor_lock[0], release_memory[0]
+(2022-08-11 13:52:41): [be[tmh.tmhs]] [remove_connection_callback] (0x4000): Successfully removed connection callback.
