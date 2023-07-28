@@ -5,6 +5,7 @@
 
 use CGI qw(:standard); 
 use DBI;
+use strict;
 
 my $host = "localhost";
 my $database = "mysqldb";
