@@ -7,6 +7,7 @@
 
 use CGI qw(:standard); 
 use DBI;
+use Email::Send;
 
 my $host = "localhost";
 my $database = "mysqldb";
